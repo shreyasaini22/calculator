@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Calculator</title>
+    <link rel="stylesheet" type="text/css" href="calci.css">
+  </head>
+  <body>
+    <h1>Calculator</h1>
+    <div class="Calculator">
+        <div class="display"><input type="text" id="d"></div>
+    
+        <div class="operators">
+            <input type="button" value="*" onclick='v("*")'>
+            <input type="button" value="-" onclick='v("-")'>
+            <input type="button" value="+" onclick='v("+")'>
+            <input type="button" value="/" onclick='v("/")'>
+        </div>
+        <div class="mainPanel">
+
+            <div class="numbers">
+            <input type="button" value="7" onclick='v("7")'>
+            <input type="button" value="8" onclick='v("8")'>
+            <input type="button" value="9" onclick='v("9")'>
+            </div>
+            
+            <div class="numbers">
+            <input type="button" value="4" onclick='v("4")'>
+            <input type="button" value="5" onclick='v("5")'>
+            <input type="button" value="6" onclick='v("6")'>
+            </div>
+            
+            <div class="numbers">
+            <input type="button" value="1" onclick='v("1")'>
+            <input type="button" value="2" onclick='v("2")'>
+            <input type="button" value="3" onclick='v("3")'>
+            </div>
+      
+            <div class="numbers">
+            <input type="button" value="0" onclick='v("0")'>
+            <input type="button" value="." onclick='v(".")'>
+            <input type="button" value="C" onclick='c("")'>
+            </div> 
+
+        </div>
+        <div class="equal">
+            <input type="button" id="result" value="=" onclick='e()'>
+        </div>
+    </div>
+
+<script src="calci.js">
+</script>
+</body>
+</html>
